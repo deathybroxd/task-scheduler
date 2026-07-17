@@ -1,0 +1,2 @@
+/usr/bin/ar qc libscheduler_lib.a CMakeFiles/scheduler_lib.dir/src/Task.cpp.o CMakeFiles/scheduler_lib.dir/src/DependencyGraph.cpp.o CMakeFiles/scheduler_lib.dir/src/EDFScheduler.cpp.o CMakeFiles/scheduler_lib.dir/src/SimClock.cpp.o CMakeFiles/scheduler_lib.dir/src/Report.cpp.o
+/usr/bin/ranlib libscheduler_lib.a

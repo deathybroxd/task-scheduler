@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/include -std=gnu++20 -Wall -Wextra -o CMakeFiles/scheduler_lib.dir/src/Task.cpp.o -c /mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/Task.cpp",
+  "file": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/Task.cpp",
+  "output": "CMakeFiles/scheduler_lib.dir/src/Task.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/include -std=gnu++20 -Wall -Wextra -o CMakeFiles/scheduler_lib.dir/src/DependencyGraph.cpp.o -c /mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/DependencyGraph.cpp",
+  "file": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/DependencyGraph.cpp",
+  "output": "CMakeFiles/scheduler_lib.dir/src/DependencyGraph.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/include -std=gnu++20 -Wall -Wextra -o CMakeFiles/scheduler_lib.dir/src/EDFScheduler.cpp.o -c /mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/EDFScheduler.cpp",
+  "file": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/EDFScheduler.cpp",
+  "output": "CMakeFiles/scheduler_lib.dir/src/EDFScheduler.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/include -std=gnu++20 -Wall -Wextra -o CMakeFiles/scheduler_lib.dir/src/SimClock.cpp.o -c /mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/SimClock.cpp",
+  "file": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/SimClock.cpp",
+  "output": "CMakeFiles/scheduler_lib.dir/src/SimClock.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/include -std=gnu++20 -Wall -Wextra -o CMakeFiles/scheduler_lib.dir/src/Report.cpp.o -c /mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/Report.cpp",
+  "file": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/src/Report.cpp",
+  "output": "CMakeFiles/scheduler_lib.dir/src/Report.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/include -std=gnu++20 -o CMakeFiles/task-scheduler.dir/main.cpp.o -c /mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/main.cpp",
+  "file": "/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/main.cpp",
+  "output": "CMakeFiles/task-scheduler.dir/main.cpp.o"
+}
+]

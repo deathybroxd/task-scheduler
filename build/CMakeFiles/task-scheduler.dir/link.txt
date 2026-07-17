@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/task-scheduler.dir/link.d "CMakeFiles/task-scheduler.dir/main.cpp.o" -o /mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/bin/task-scheduler  libscheduler_lib.a
