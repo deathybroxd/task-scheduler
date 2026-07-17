@@ -1,6 +1,0 @@
-/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build/CMakeFiles/scheduler_lib.dir
-/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build/CMakeFiles/task-scheduler.dir
-/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build/CMakeFiles/run.dir
-/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build/CMakeFiles/test.dir
-/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/vince/OneDrive/Desktop/projects/task-scheduler/build/CMakeFiles/rebuild_cache.dir
