@@ -28,7 +28,7 @@ public:
     // get tasks that are ready
     std::vector<Task> GetReadyTasks(int currentTime, const std::unordered_set<int>& completedIds) const;
 
-    // task getter
+    // task getterr
     const std::optional<Task> GetTask(int id) const;
 
 private:
