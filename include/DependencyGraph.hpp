@@ -22,7 +22,7 @@ public:
     // add dependency (adds to m_adjacency)
     void AddDependency(int id, int dependsOnId);
 
-    // has cycle - does a DFS to find 
+    // has cycle - does a black/gray/white DFS to find cycles
     bool HasCycle();
 
     // get tasks that are ready
@@ -32,6 +32,9 @@ public:
     const std::optional<Task> GetTask(int id) const;
 
 private:
+    // recursive helper for hascycle
+    bool HasCycleHelper(int id, std::unordered_set<int>& visiting, std::unordered_set<int>& visited);
+
     std::unordered_map<int, Task> m_tasks;
 };
 #endif

@@ -2,7 +2,6 @@
 
 #include "DependencyGraph.hpp"
 #include <iostream>
-#include <stdexcept>
 #include <string>
 #include <vector>
 #include <chrono>
@@ -28,8 +27,19 @@ void DependencyGraph::AddDependency(int id, int dependsOnId) {
 }
 
 bool DependencyGraph::HasCycle() {
-    // TODO
-    
+    // white nodes are unexplored
+    std::unordered_set<int> visiting; // gray
+    std::unordered_set<int> visited; // black
+
+    for(const auto& pair : m_tasks) {
+        auto it = visited.find(pair.first);
+        if(it == visited.end()) {
+            if(HasCycleHelper(pair.first, visiting, visited)) {
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 std::vector<Task> DependencyGraph::GetReadyTasks(int currentTime, const std::unordered_set<int>& completedIds) const {
@@ -68,4 +78,24 @@ const std::optional<Task> DependencyGraph::GetTask(int id) const {
         return std::nullopt;
     }
     return it->second;
+}
+
+// PRIVATE HELPERS
+bool DependencyGraph::HasCycleHelper(int id, std::unordered_set<int>& visiting, std::unordered_set<int>& visited) {
+    visiting.emplace(id); // make current node gray
+    auto it = m_tasks.find(id);
+    for(const auto& dependencyId : it->second.GetDependencies()) {
+        if(visiting.find(dependencyId) != visiting.end()) {
+            return true; // dependency is already gray, cycle found
+        }
+
+        if(visited.find(dependencyId) == visited.end()) { 
+            if(HasCycleHelper(dependencyId, visiting, visited)) {
+                return true; // if we have ended up back at a id that is black, we must be in a cycle
+            }
+        }
+    }
+    visiting.erase(id);
+    visited.emplace(id);
+    return false;
 }

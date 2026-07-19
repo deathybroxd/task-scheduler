@@ -24,9 +24,8 @@ target_link_libraries(task-scheduler PRIVATE scheduler_lib)
 
 # type make run to run the program
 add_custom_target(run 
-    COMMAND task-scheduler
+    COMMAND ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/task-scheduler
     DEPENDS task-scheduler
-    WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
 )
 
 enable_testing()
