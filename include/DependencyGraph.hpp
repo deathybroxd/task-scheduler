@@ -8,6 +8,7 @@
 #include <vector>
 #include <unordered_set>
 #include <optional>
+#include <cstddef>
 
 class DependencyGraph {
 public:
@@ -30,6 +31,12 @@ public:
 
     // task getterr
     const std::optional<Task> GetTask(int id) const;
+
+    // isempty
+    bool IsEmpty();
+
+    // getsize
+    std::size_t GetSize();
 
 private:
     // recursive helper for hascycle

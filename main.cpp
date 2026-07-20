@@ -1,9 +1,5 @@
 /* main.cpp */
-#include "Task.hpp"
-#include "DependencyGraph.hpp"
-#include "EDFScheduler.hpp"
-#include "Report.hpp"
-#include "SimClock.hpp"
+#include "TaskSystem.hpp"
 
 int main() {
     

@@ -80,6 +80,14 @@ const std::optional<Task> DependencyGraph::GetTask(int id) const {
     return it->second;
 }
 
+bool DependencyGraph::IsEmpty() {
+    return m_tasks.empty();
+}
+
+std::size_t DependencyGraph::GetSize() {
+    return m_tasks.size();
+}
+
 // PRIVATE HELPERS
 bool DependencyGraph::HasCycleHelper(int id, std::unordered_set<int>& visiting, std::unordered_set<int>& visited) {
     visiting.emplace(id); // make current node gray
