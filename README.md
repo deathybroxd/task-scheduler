@@ -1,7 +1,7 @@
 ### task-scheduler
 This is a mock task scheduler for an operating system. It uses a graph data structure to add tasks and add dependencies/edges to other tasks.
 The dependency graph also does a cycle check using a white/gray/black depth-first search to ensure it can work properly. If a cycle is detected in the graph,
-the program is immediatelly terminated. This project also implements a EDF (earliest deadline first) scheduler to schedule the tasks accordingly. Data from
+the program is immediately terminated. This project also implements a EDF (earliest deadline first) scheduler to schedule the tasks accordingly. Data from
 this program is outputted in a .csv file formatted as such:
 
 ```
