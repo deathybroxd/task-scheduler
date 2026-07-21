@@ -5,13 +5,13 @@
 #include "Task.hpp"
 #include <vector>
 
-// abstract base class for EDFScheduler
+// abstract base class for EDFScheduler - allows for different scheduling algorithms later on
 class Scheduler {
 public:
     virtual ~Scheduler() = default;
 
     // pure virtual - selects the next taask from readytasks
-    virtual const Task* SelectNextTask(const std::vector<Task>& readyTasks, int currentTime) = 0;
+    virtual const Task* SelectNextTask(const std::vector<Task>& readyTasks) = 0;
 };
 
 #endif

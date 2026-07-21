@@ -72,12 +72,27 @@ std::vector<Task> DependencyGraph::GetReadyTasks(int currentTime, const std::uno
     return readyTasks;
 }
 
-const std::optional<Task> DependencyGraph::GetTask(int id) const {
+const std::unordered_map<int, Task>& DependencyGraph::GetAllTasks() const {
+    return m_tasks;
+}
+
+std::optional<Task> DependencyGraph::GetTask(int id) const {
     auto it = m_tasks.find(id);
     if(it == m_tasks.end()) {
         return std::nullopt;
     }
-    return it->second;
+    std::optional<Task> task = it->second;
+    return task;
+}
+
+
+void DependencyGraph::SetTaskState(int id, Task::TaskState state) {
+    auto it = m_tasks.find(id);
+    if(it == m_tasks.end()) {
+        std::cerr << "ERROR: Could not find task with id " << id << std::endl;
+        return;
+    }
+    it->second.SetState(state);
 }
 
 bool DependencyGraph::IsEmpty() {

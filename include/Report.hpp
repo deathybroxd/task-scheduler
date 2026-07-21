@@ -31,9 +31,14 @@ public:
     void PrintSummary() const;
 
     // exports summary into a csv
-    void ExportCSV(const std::string& filename) const;
+    void ExportCSV();
 
 private:
+    const std::string BASE_FILENAME = "../data/task_scheduler_data-";
+    const std::string BASE_FILENAME_EXT = ".csv";
+
+    std::string GetFilename();
+
     std::vector<CompletionRecord> m_records;
 
 };

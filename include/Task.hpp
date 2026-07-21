@@ -9,7 +9,7 @@ Task container class
 class Task {
 public:
     enum class TaskState { PENDING, READY, RUNNING, COMPLETED, MISSED_DEADLINE };
-
+    
     // constructor
     explicit Task(int id, int priority, int arrivalTime, int deadline, int duration, int remainingTime, TaskState state);
 
