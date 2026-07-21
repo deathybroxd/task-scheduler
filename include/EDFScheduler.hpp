@@ -1,4 +1,6 @@
-/* EDFScheduler.hpp */
+/* EDFScheduler.hpp 
+EDF = earliest deadline first
+*/
 #ifndef EDFSCHEDULER_HPP
 #define EDFSCHEDULER_HPP
 
