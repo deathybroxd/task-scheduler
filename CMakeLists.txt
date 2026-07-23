@@ -30,9 +30,19 @@ add_custom_target(run
 
 # make val
 add_custom_target(val
-    COMMAND valgrind --leak-check=full --track-origins=yes ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/task-scheduler
+    COMMAND valgrind ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/task-scheduler
     DEPENDS task-scheduler
 )
 
 enable_testing()
-#add_subdirectory(tests)
+
+include(FetchContent)
+FetchContent_Declare(
+    googletest
+    URL https://github.com/google/googletest/archive/refs/tags/v1.15.2.zip
+)
+
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
+add_subdirectory(tests)
