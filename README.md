@@ -34,7 +34,7 @@ Task Id|Arrival Time|Deadline|Completion Time|Status|Lateness
 ## Usage ##
 To compile: 
 create a build directory where this is stored,
-type:
+then type:
 ``` cmake .. ```
 
 Then to run or run valgrind:
