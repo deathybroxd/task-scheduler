@@ -1,4 +1,4 @@
-### task-scheduler
+# task-scheduler #
 This is a mock task scheduler for an operating system. It uses a graph data structure to add tasks and add dependencies/edges to other tasks.
 The dependency graph also does a cycle check using a white/gray/black depth-first search to ensure it can work properly. If a cycle is detected in the graph,
 the program is immediately terminated. This project also implements a EDF (earliest deadline first) scheduler to schedule the tasks accordingly. Data from
@@ -30,3 +30,16 @@ Task Id|Arrival Time|Deadline|Completion Time|Status|Lateness
 75|3|22|23|Late
 1|87|22|23|Met deadline
 ```
+
+## Usage ##
+To compile: 
+create a build directory where this is stored,
+type:
+``` cmake .. ```
+
+Then to run or run valgrind:
+``` make run ```
+``` make val ```
+
+To run tests:
+``` ctest ```
